@@ -1,0 +1,42 @@
+:root {
+	--border--width--thick: 10px;
+	--border--width--thin: 1px;
+
+}
+html,
+body {
+	padding: 0;
+	margin: 0;
+
+	background: #eee;
+}
+
+.a {
+	width: 200px;
+	height: 200px;
+
+	margin: 100px;
+
+	background: white;
+/**
+ * works:
+ * border-top: 10px solid blue;    
+ */
+    border-top: var(--border--width--thick) solid blue;    
+    border-width: 1px;    
+}
+
+.a > .b {
+	width: 80%;
+	height: 80%;
+	margin: 10%;
+
+	/**
+	 * works:
+	 * border-left: 10px solid blue;    
+	 * OR
+	 * border-top: 10px solid blue;    
+	 */
+    border-left: var(--border--width--thick) solid blue;
+    border-width: 1px;
+}	
